@@ -1,9 +1,10 @@
-import React from 'react';
+import React from "react";
+import { Button } from "semantic-ui-react";
 
-export const Button = ({ backgroundColor, label, ...props}) => {
-    return (
-        <button style={backgroundColor && {backgroundColor}} {...props}>
-            {label}
-        </button>
-    )
-}
+export const Btn = ({ label, ...props }) => {
+  return (
+    <Button color="olive" {...props}>
+      {label}
+    </Button>
+  );
+};
